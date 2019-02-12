@@ -33,5 +33,10 @@ public class DemoApplication implements CommandLineRunner {
 	public String hello(){
 		return "hello, " + name ;
 	}
+
+	@Bean
+	public RestTemplate getRestTemplate(){
+		return new RestTemplate();
+	}
 }
 
